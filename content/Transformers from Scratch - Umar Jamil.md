@@ -28,7 +28,7 @@
 	- PE(1,3) means the second token in the sentence's 4th embedding vector entry
 		- Hence for this, `pos=1, 2i=2` and cos to be used
 	- `i` goes from `0 to d_model/2 - 1` (Note `d_model` is always kept as an even number)
-		- Assume `d_model = 6, i ranges [0, 2] [2*0, 2*0+1, 2*1, 2*1+1, 2*2, 2*2+1]
+		- Assume `d_model = 6, i ranges [0, 2] [2*0, 2*0+1, 2*1, 2*1+1, 2*2, 2*2+1]`
 	- PEs are only computed once and reused for **every sentence** during both training and inference
 	- All we have to do is add these PE values to the input embeddings, which will change for every sentence
 	- ![[Tsfm_3.png]]
