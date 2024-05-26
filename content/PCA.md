@@ -1,9 +1,12 @@
 - Comes under [[Dimension Reduction]]
 - Imagine we have objects (like people or cities) that we want to cluster together based on data we have about them
-	- On the outset they look similar. Its not like we have red, blue and green balls and are looking to cluster them
-	- If we had such simple data (think 1D, 2D or 3D data), we could make a plot and easily discern them
-- PCA converts the correlation (or the lack thereof) among objects into a 2D plot
-- Here, highly correlated objects are clustered together
+	- Toy problem: given a bunch of balls, cluster them
+	- Plausible criterion to cluster is based on colour
+	- IRL, we rarely have problem where simple criteria like that are used
+		- Usually, its a combination of factors, each with their thresholds
+- If we had such simple data (think 1D, 2D or 3D data), we could make a plot and easily discern them
+	- PCA converts the correlation (or the lack thereof) among objects into a 2D plot
+	- Here, highly correlated objects are clustered together
 - ![[PCA_1.png]]
 - ![[PCA_2.png]]
 	- Here, dist. b/w Red and Yellow = dist. b/w Red and Teal

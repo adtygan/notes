@@ -2,7 +2,7 @@
   <iframe src="Tsfm Umar Jamil.pdf" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;"></iframe>
 </div>
 
-## RNNs
+## Issue with RNNs
 - Convert `n input_seq -> n output_seq` in `n timesteps`
 - At every stage, `i/p: input_seq + hidden_state`
 - 3 issues
@@ -18,21 +18,7 @@
 - Input Embedding
 	- Convert tokens into an embedding vector of size `d_model` (512 in our case)
 	- This vector changes during training
-- Positional Encoding
-	- We want model to treat nearby words as "nearby" and distant words as "distant"
-	- The input embeddings do not convey this, they convey meaning of token in isolation
-	- We want PEs to represent a pattern that the model can understand
-	- ![[Tsfm_1.png]]
-	- `Encoder_Input[i] = Embedding[i] + Positional_Encoding[i]`
-	- ![[Tsfm_2.png]]
-	- PE(1,3) means the second token in the sentence's 4th embedding vector entry
-		- Hence for this, `pos=1, 2i=2` and cos to be used
-	- `i` goes from `0 to d_model/2 - 1` (Note `d_model` is always kept as an even number)
-		- Assume `d_model = 6, i ranges [0, 2] [2*0, 2*0+1, 2*1, 2*1+1, 2*2, 2*2+1]`
-	- PEs are only computed once and reused for **every sentence** during both training and inference
-	- All we have to do is add these PE values to the input embeddings, which will change for every sentence
-	- ![[Tsfm_3.png]]
-	- We see closer positions have similar encodings than farther ones
+- [[Positional Encoding]]
 - Self-Attention (Single-Head Attention)
 	- $$Attention(Q,K,V) = softmax(\frac{QK^T}{\sqrt{d_k}})V$$
 	- `d_k = d_model`
@@ -65,13 +51,7 @@
 	- The $softmax(\frac{QK^T}{\sqrt{d_k}})$ returns what I call a **mixing formula** for each row, which all sum to 1
 	- For my Query, if i multiply $softmax(\frac{QK^T}{\sqrt{d_k}})$ with $V$, for each word's embedding, it will return a new embedding which is a mixture of all the words in the sentence, mixed according to how important each word is to this word
 	- In this example, the word "love" involves mainly a mixture of romance and comedy which makes sense
-- Layer Normalization
-	- ![[Tsfm_9.png]]
-	- Standardises each item in the batch to have `mean=0, var=1`
-	- **Correction:** The diagram bottom left says "between 0 and 1" which is wrong
-		- It actually means have `mean=0, var=1` may be restrictive
-	- In the diagram, `N` is number of items in batch
-	- Layer Norm applies its operation per item, whereas Batch Norm does across channel
+- [[Layer Normalization]]
 - Decoder
 	- ![[Tsfm_10.png]]
 	- In here, the Decoder gets `K, V` from Encoder and `Q` from Decoder
