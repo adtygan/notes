@@ -82,5 +82,4 @@
 		- To combat blow up, we only retain `top B` most probable sequences
 
 ## References
-
-1. https://www.youtube.com/watch?v=bCz4OMemCcA
+1. **Umar Jamil,** *Attention is all you need (Transformer) - Model explanation (including math), Inference and Training*: https://www.youtube.com/watch?v=bCz4OMemCcA

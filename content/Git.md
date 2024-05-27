@@ -25,4 +25,4 @@
 ---
 ## References
 
-1. https://www.youtube.com/watch?v=8JJ101D3knE
+1. **Programming with Mosh**, *Git Tutorial for Beginners: Learn Git in 1 Hour*: https://www.youtube.com/watch?v=8JJ101D3knE

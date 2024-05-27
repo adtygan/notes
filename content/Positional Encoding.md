@@ -12,3 +12,6 @@
 - All we have to do is add these PE values to the input embeddings, which will change for every sentence
 - ![[PosEnc_3.png]]
 - We see closer positions have similar encodings than farther ones
+
+## References
+1. **Umar Jamil,** *Attention is all you need (Transformer) - Model explanation (including math), Inference and Training*: https://www.youtube.com/watch?v=bCz4OMemCcA

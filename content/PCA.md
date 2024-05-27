@@ -30,6 +30,6 @@
 
 ## References
 
-1. https://youtu.be/HMOI_lkzW08?si=BM9OGWX6w1lRpaOY
-2. https://youtu.be/FgakZw6K1QQ?si=KlzhTirt-5rpVRM3
-3. https://blog.devgenius.io/the-role-of-eigenvalues-in-pca-c177718c2cc
+1. **StatQuest**, *StatQuest: PCA main ideas in only 5 minutes!!!*: https://youtu.be/HMOI_lkzW08?si=BM9OGWX6w1lRpaOY
+2. **StatQuest**, *StatQuest: Principal Component Analysis (PCA), Step-by-Step*: https://youtu.be/FgakZw6K1QQ?si=KlzhTirt-5rpVRM3
+3. **Nic Coxen**, *The role of eigenvalues in PCA*: https://blog.devgenius.io/the-role-of-eigenvalues-in-pca-c177718c2cc
