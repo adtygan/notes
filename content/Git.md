@@ -1,20 +1,20 @@
 ### Configuring Git
 - Config settings can be specified at 3 levels
-	- **System:** All users
-	- **Global:** All repos of current user
-	- **Local:** Current repo only
+	- **system:** all users
+	- **global:** all repos of current user
+	- **local:** current repo only
 - Setting default editor: `git config --glocal core.editor "cursor --wait"`
-	- I'm using `cursor` here instead of `code` coz I use Cursor instead of VSCode
+	- i'm using `cursor` here instead of `code` coz I use cursor instead of vscode
 	- `--wait` flag will put the terminal on pause (can't proceed with new commands) until you have closed the editor
 - Editing the global settings using IDE: `git config --global -e`
-	- Opens `.gitconfig` 
+	- opens `.gitconfig` 
 - **Handling end-of-line:** `git config --global core.autocrlf input`
-	- In Windows, EOL is denoted by `\r\n`, while in Mac, it's just `\n`
-	- In Windows, instead of `input`, set it to `true`
+	- in windows, eol is denoted by `\r\n`, while in mac, it's just `\n`
+	- in windows, instead of `input`, set it to `true`
 ### Git Workflow
 - Git does not store delta among files, rather it stores the entire file
 - But, it does this smartly by compressing the files and not storing duplicate contents
-	- Requires understanding of implementation details (out of scope)
+	- requires understanding of implementation details (out of scope)
 ### Staging Files
 - 
 ### Cheatsheet

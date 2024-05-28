@@ -1,0 +1,6 @@
+- Internally, it resembles a matrix
+- Row size - no. of words , (e.g.) `100`
+- Column size - size of each word vector (e.g.) `512`
+- Then embedding matrix is of shape `(100, 512)`
+- Additionally, this embedding matrix is **trainable**
+- You can either start with random weights, or pick a pre-trained embedding matrix and fine-tune it
