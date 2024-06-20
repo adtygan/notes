@@ -76,9 +76,5 @@
 		- note that this means that the tree will grow like `B, BxB, BxBxB, ...`
 		- to combat blow up, we only retain `top B` most probable sequences
 
-## Umar Jamil's Slides
-<div style="overflow: hidden; padding-top: 56.25%; position: relative;">
-  <iframe src="Tsfm Umar Jamil.pdf" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;"></iframe>
-</div>
 ## References
 1. **Umar Jamil**, *Attention is all you need (Transformer) - Model explanation (including math), Inference and Training*: https://www.youtube.com/watch?v=bCz4OMemCcA
